@@ -1,0 +1,41 @@
+{
+  "hosting": {
+    "public": "out",
+    "headers": [
+      {
+        "source": "/index.txt",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/en/index.html"
+      },
+      {
+        "source": "/:lang/**",
+        "destination": "/:lang/index.html"
+      }
+    ],
+    "error-pages": [
+      {
+        "code": 404,
+        "path": "/404.html"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "us-central1"
+    },
+    "trailingSplash": false
+  }
+}
