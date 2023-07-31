@@ -2,7 +2,7 @@ import { dir } from 'i18next'
 
 import { languages } from '../i18n/settings'
 import ThemeProvider from './providers/ThemeProvider'
-
+import { StoreProviders } from '../redux/provider'
 import './globals.css'
 
 export const metadata = {
@@ -24,7 +24,9 @@ export default function RootLayout({
   return (
     <html lang={lang} dir={dir(lang)}>
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <StoreProviders>{children}</StoreProviders>
+        </ThemeProvider>
       </body>
     </html>
   )
