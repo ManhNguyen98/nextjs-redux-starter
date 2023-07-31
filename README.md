@@ -1,34 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nextjs-redux-starter
+
+![GitHub](https://img.shields.io/github/license/ManhNguyen98/nextjs-redux-starter)
+![GitHub stars](https://img.shields.io/github/stars/ManhNguyen98/nextjs-redux-starter)
+![GitHub forks](https://img.shields.io/github/forks/ManhNguyen98/nextjs-redux-starter)
+
+**nextjs-redux-starter** is a beginner-friendly boilerplate to jumpstart your multilingual web application development. It's built using Next.js, Redux Toolkit, and i18n, providing you with a robust foundation to quickly create feature-rich projects.
+
+## Features
+
+- **Multilingual Support:** The starter template includes a pre-configured i18n setup, allowing you to easily create applications that can be translated into multiple languages. It comes with initial support for English and Vietnamese, but you can extend it to add other languages effortlessly.
+
+- **State Management with Redux Toolkit:** Manage your application's state in a predictable and efficient way using Redux Toolkit. It includes a basic example of a counter using Redux, demonstrating how to integrate Redux into your Next.js project.
+
+- **Routing and Layout:** The project follows Next.js conventions for routing, enabling you to create separate pages and a consistent layout easily.
+
+- **Theme Switching:** Customize your user's experience by implementing a dark and light theme toggle feature.
+
+- **Modern Development Workflow:** Whether you prefer npm or yarn, the project supports both package managers. However, yarn is set as the default option for a more streamlined development experience.
+
+- **Code Quality and Consistency:** ESLint is integrated into the repository to ensure your code adheres to consistent coding standards, reducing bugs and enhancing maintainability.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Before you begin, make sure you have the following software installed on your local machine:
+
+- [Node.js](https://nodejs.org) (v14 or later recommended)
+- [Yarn](https://yarnpkg.com) (optional, but preferred) or npm
+
+### Quick Start
+
+1. Clone this repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/ManhNguyen98/nextjs-redux-starter.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Change into the project directory:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd nextjs-redux-starter
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Install the dependencies:
 
-## Learn More
+```bash
+yarn install
+# or
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Start the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+yarn dev
+# or
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see your application running.
 
-## Deploy on Vercel
+### Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Feel free to customize the starter template according to your project requirements. Here are some areas you might want to explore:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Adding More Languages:** Extend multilingual support by adding translations for additional languages in the `locales` folder.
+
+- **Creating New Features:** Utilize the Redux Toolkit setup to build more advanced features and manage complex state requirements.
+
+- **Styling and Theming:** Customize the appearance and design of your web application to align with your branding or user preferences.
+
+## Contribution
+
+Contributions are more than welcome! If you find any bugs, have feature requests, or want to improve the starter template, please create an issue or submit a pull request. Let's collaborate and make this starter template even better together.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+A big thank you to the open-source community and the developers behind Next.js, Redux Toolkit, and i18n for their excellent tools and documentation.
